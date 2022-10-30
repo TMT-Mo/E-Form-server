@@ -1,0 +1,10 @@
+E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateUtilities\bin\Debug\netcoreapp3.1\DocumentTemplateUtilities.deps.json
+E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateUtilities\bin\Debug\netcoreapp3.1\DocumentTemplateUtilities.dll
+E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateUtilities\bin\Debug\netcoreapp3.1\DocumentTemplateUtilities.pdb
+E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateUtilities\obj\Debug\netcoreapp3.1\DocumentTemplateUtilities.GeneratedMSBuildEditorConfig.editorconfig
+E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateUtilities\obj\Debug\netcoreapp3.1\DocumentTemplateUtilities.AssemblyInfoInputs.cache
+E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateUtilities\obj\Debug\netcoreapp3.1\DocumentTemplateUtilities.AssemblyInfo.cs
+E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateUtilities\obj\Debug\netcoreapp3.1\DocumentTemplateUtilities.csproj.CoreCompileInputs.cache
+E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateUtilities\obj\Debug\netcoreapp3.1\DocumentTemplateUtilities.dll
+E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateUtilities\obj\Debug\netcoreapp3.1\DocumentTemplateUtilities.pdb
+E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateUtilities\obj\Debug\netcoreapp3.1\DocumentTemplateUtilities.csproj.AssemblyReference.cache

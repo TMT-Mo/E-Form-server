@@ -1,0 +1,13 @@
+E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateModel\bin\Debug\netcoreapp3.1\DocumentTemplateModel.deps.json
+E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateModel\bin\Debug\netcoreapp3.1\DocumentTemplateModel.runtimeconfig.json
+E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateModel\bin\Debug\netcoreapp3.1\DocumentTemplateModel.runtimeconfig.dev.json
+E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateModel\bin\Debug\netcoreapp3.1\DocumentTemplateModel.dll
+E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateModel\bin\Debug\netcoreapp3.1\DocumentTemplateModel.pdb
+E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateModel\obj\Debug\netcoreapp3.1\DocumentTemplateModel.csproj.AssemblyReference.cache
+E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateModel\obj\Debug\netcoreapp3.1\DocumentTemplateModel.GeneratedMSBuildEditorConfig.editorconfig
+E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateModel\obj\Debug\netcoreapp3.1\DocumentTemplateModel.AssemblyInfoInputs.cache
+E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateModel\obj\Debug\netcoreapp3.1\DocumentTemplateModel.AssemblyInfo.cs
+E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateModel\obj\Debug\netcoreapp3.1\DocumentTemplateModel.csproj.CoreCompileInputs.cache
+E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateModel\obj\Debug\netcoreapp3.1\DocumentTemplateModel.dll
+E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateModel\obj\Debug\netcoreapp3.1\DocumentTemplateModel.pdb
+E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateModel\obj\Debug\netcoreapp3.1\DocumentTemplateModel.genruntimeconfig.cache

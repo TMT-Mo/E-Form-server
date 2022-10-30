@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "odmnetbFUvb7rIyHm5Iaaz2lZc+YTSDcO5V8HIbFelnLy9fqI+YPMK6UPKh8s3dT+8IVqRWSuOuod3PrQGUWiQ==",
+  "success": true,
+  "projectFilePath": "E:\\E-Form-server\\DocumentTemplateAPI\\WebApplication1\\WebApplication1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hoang\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.12\\microsoft.netcore.app.host.win-x64.3.1.12.nupkg.sha512"
+  ],
+  "logs": []
+}
