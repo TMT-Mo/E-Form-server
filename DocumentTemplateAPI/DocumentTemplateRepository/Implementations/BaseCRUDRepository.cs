@@ -1,6 +1,7 @@
 ﻿using DocumentTemplateModel.Entities;
 using DocumentTemplateRepository.Interfaces;
 using DocumentTemplateUtilities;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
@@ -129,7 +130,7 @@ namespace DocumentTemplateRepository.Implementations
             }
         }
 
-        public PaginationResult<EDMXType> GetPagination(int page, int pageSize, NameValueCollection queries = null, Func<IQueryable<EDMXType>, NameValueCollection, IQueryable<EDMXType>> externalFilter = null, IQueryable<EDMXType> query = null, Func<IQueryable<EDMXType>, NameValueCollection, string, IQueryable<EDMXType>> externalSort = null)
+        public PaginationResult<EDMXType> GetPagination(int page, int pageSize, HttpRequest queries = null, Func<IQueryable<EDMXType>, NameValueCollection, IQueryable<EDMXType>> externalFilter = null, IQueryable<EDMXType> query = null)
         {
             try
             {
@@ -144,20 +145,20 @@ namespace DocumentTemplateRepository.Implementations
                 var invalidParameters = new List<string>();
                 var allowQueries = new List<string>() { "_size", "_page", "_sort" };
                 var queriesOfExternal = new NameValueCollection();
-                foreach (string key in queries)
+                foreach (string key in queries.Query.Keys)
                 {
-                    var val = queries[key];
+                    var val = queries.Query[key].ToString();
                     if (!allowQueries.Contains(key))
                     {
                         queriesOfExternal.Add(key, val);
                     }
                 }
 
-                foreach (string key in queries)
+                foreach (string key in queries.Query.Keys)
                 {
                     if (key.Contains("_") && !key.StartsWith("_") && !key.EndsWith("_"))
                     {
-                        var val = queries[key];
+                        var val = queries.Query[key].ToString();
                         var pair = key.Split('_');
                         if (pair.Length != 2)
                         {
@@ -337,24 +338,12 @@ namespace DocumentTemplateRepository.Implementations
                     throw new ParameterNotAllowException($"Not allowed parameter: { string.Join(", ", invalidParameters) }");
                 }
 
-                // Filter by external fields
-                if (externalFilter != null && queriesOfExternal.Count > 0)
-                {
-                    query = externalFilter(query, queriesOfExternal);
-                }
-                var temp = query;
-
-                // Sort by external fields
-                if (externalSort != null)
-                {
-                    query = externalSort(query, queries, queries["_sort"]);
-                }
                 if (IsOrdered(query) != true)
                 {
                     var _sort = "id:desc";
-                    if (queries["_sort"] != null)
+                    if (!String.IsNullOrEmpty(queries.Query["_sort"].ToString()))
                     {
-                        _sort = queries["_sort"];
+                        _sort = queries.Query["_sort"].ToString();
                     }
 
                     var sortQueries = new List<string>();

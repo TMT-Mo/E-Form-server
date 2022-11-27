@@ -11,16 +11,21 @@ namespace DocumentTemplateModel.Models
     {
         public User()
         {
+            Document = new HashSet<Document>();
             UserRole = new HashSet<UserRole>();
         }
 
         public int Id { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
+        public string Email { get; set; }
         public int? StatusAccount { get; set; }
         public DateTime? CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
+        public string Firstname { get; set; }
+        public string Lastname { get; set; }
 
+        public virtual ICollection<Document> Document { get; set; }
         public virtual ICollection<UserRole> UserRole { get; set; }
     }
 }

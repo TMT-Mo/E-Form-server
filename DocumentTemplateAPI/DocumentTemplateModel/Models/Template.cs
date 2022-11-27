@@ -7,15 +7,17 @@ using System.Collections.Generic;
 
 namespace DocumentTemplateModel.Models
 {
-    public partial class UserRole
+    public partial class Template
     {
         public int Id { get; set; }
-        public int IdUser { get; set; }
-        public int IdRole { get; set; }
-        public int IdDepartment { get; set; }
+        public string TemplateName { get; set; }
+        public int? IdDepartment { get; set; }
+        public int? StatusTemplate { get; set; }
+        public DateTime? CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
+        public string Type { get; set; }
+        public string Size { get; set; }
 
         public virtual Department IdDepartmentNavigation { get; set; }
-        public virtual Role IdRoleNavigation { get; set; }
-        public virtual User IdUserNavigation { get; set; }
     }
 }

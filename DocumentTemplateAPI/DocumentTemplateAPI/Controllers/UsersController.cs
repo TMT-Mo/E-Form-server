@@ -47,18 +47,15 @@ namespace DocumentTemplateAPI.Controllers
                 var response = _userRepository.Authenticate(request.UserName, request.Password);
                 if (response == Enums.ReponseUser.INVALIDPASSWORD.ToString() || response == Enums.ReponseUser.NOTFOUND.ToString())
                 {
-                    return Unauthorized(new Response<dynamic>
+                    return Unauthorized(new Response
                     {
                         ErrorMessage = "UserName or password are incorrect"
                     });
                 }
 
-                var resp = Ok(new Response<dynamic>
+                var resp = Ok(new UserReponse
                 {
-                    Data = new UserReponse
-                    {
-                        Token = JwtHelpers.GenerateJwtToken(response)
-                    }
+                    Token = JwtHelpers.GenerateJwtToken(response)
                 });
 
                 return resp;
@@ -66,7 +63,7 @@ namespace DocumentTemplateAPI.Controllers
             catch (Exception ex)
             {
 
-                return StatusCode(500, new Response<dynamic>
+                return StatusCode(500, new Response
                 {
                     ErrorMessage = ex.Message
                 });

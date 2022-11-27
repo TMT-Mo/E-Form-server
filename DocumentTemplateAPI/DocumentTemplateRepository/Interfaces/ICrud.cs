@@ -1,4 +1,5 @@
 ﻿using DocumentTemplateModel.Entities;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
@@ -17,7 +18,7 @@ namespace DocumentTemplateRepository.Interfaces
         List<T> CreateBulk(List<CreateReq> items);
         List<T> GetAll();
         IQueryable<T> GetAllQueryable();
-        PaginationResult<T> GetPagination(int page, int pageSize, NameValueCollection queries = null, Func<IQueryable<T>, NameValueCollection, IQueryable<T>> externalFilter = null, IQueryable<T> query = null, Func<IQueryable<T>, NameValueCollection, string, IQueryable<T>> externalSort = null);
+        PaginationResult<T> GetPagination(int page, int pageSize, HttpRequest queries = null, Func<IQueryable<T>, NameValueCollection, IQueryable<T>> externalFilter = null, IQueryable<T> query = null);
         T GetOneById(Id id);
         T UpdateOneById(Id id, UpdateReq item);
         T UpdateOne(T item);

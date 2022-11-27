@@ -12,5 +12,6 @@
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_DbContextTypeFullName>DocumentTemplateModel.Models.CP25Team08Context</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
+    <NameOfLastUsedPublishProfile>E:\E-Form-server\DocumentTemplateAPI\DocumentTemplateAPI\Properties\PublishProfiles\documentcapstone - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

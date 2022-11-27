@@ -5,12 +5,9 @@ using System.Text;
 
 namespace DocumentTemplateModel.Entities
 {
-    public class Response<T>
+    public class Response
     {
         [JsonProperty(PropertyName = "errorMessage")]
         public string ErrorMessage { get; set; }
-
-        [JsonProperty(PropertyName = "data")]
-        public T Data { get; set; }
     }
 }

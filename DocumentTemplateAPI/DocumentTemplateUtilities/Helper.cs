@@ -21,7 +21,7 @@ namespace DocumentTemplateUtilities
         //                return item;
         //            }
         //        }
-                
+
         //        //foreach (string key in queries)
         //        //{
         //        //    if (!whiteListedParams.Contains(key))
@@ -33,5 +33,33 @@ namespace DocumentTemplateUtilities
 
         //    return null;
         //}
+        public class PaginationParams
+        {
+            public int Page { get; set; }
+            public int Size { get; set; }
+        }
+        public static PaginationParams ParsePaginationParams(HttpRequest queries)
+        {
+            int size = 10;
+            int page = 0;
+
+            var sizeStr = queries.Query["_size"].ToString();
+            if (!String.IsNullOrEmpty(sizeStr))
+            {
+                size = int.Parse(sizeStr);
+            }
+
+            var pageStr = queries.Query["_page"].ToString();
+            if (!String.IsNullOrEmpty(pageStr))
+            {
+                page = int.Parse(pageStr);
+            }
+
+            return new PaginationParams
+            {
+                Size = size,
+                Page = page
+            };
+        }
     }
 }

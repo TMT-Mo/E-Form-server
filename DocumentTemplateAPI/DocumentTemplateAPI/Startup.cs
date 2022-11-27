@@ -29,7 +29,13 @@ namespace DocumentTemplateAPI
             services.AddRazorPages().AddRazorRuntimeCompilation();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped(typeof(IDBRepositoryBase<User>), typeof(DBRepositoryBase<User>));
+            services.AddScoped(typeof(IDBRepositoryBase<Template>), typeof(DBRepositoryBase<Template>));
+            services.AddScoped(typeof(IDBRepositoryBase<Department>), typeof(DBRepositoryBase<Department>));
+            services.AddScoped(typeof(IDBRepositoryBase<Role>), typeof(DBRepositoryBase<Role>));
+            services.AddScoped(typeof(IDBRepositoryBase<UserRole>), typeof(DBRepositoryBase<UserRole>));
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<ITemplateRepository, TemplateRepository>();
+            services.AddScoped<IDepartmentRepository, DepartmentRepository>();
             services.AddControllers();
             services.AddSwaggerGen(s =>
             {
@@ -39,6 +45,15 @@ namespace DocumentTemplateAPI
                     Title = "DocumentTemplate API",
                     Description = "API for DocumentTemplate API"
                 });
+            });
+
+            services.AddCors(option =>
+            {
+                option.AddDefaultPolicy(builder =>
+                {
+                    builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+                });
+
             });
         }
 
@@ -63,7 +78,7 @@ namespace DocumentTemplateAPI
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseCors();
             app.UseAuthorization();
 
 
