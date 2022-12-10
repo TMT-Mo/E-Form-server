@@ -42,7 +42,7 @@ namespace DocumentTemplateRepository.Implementations
         {
             try
             {
-                return _repo.GetAll().FirstOrDefault(u => u.Username == userName && u.StatusAccount == (int)Enums.Status.ACTIVE);
+                return _repo.GetAll().FirstOrDefault(u => u.Username == userName && u.Status == (int)Enums.Status.ACTIVE);
             }
             catch (Exception ex)
             {

@@ -15,6 +15,7 @@ namespace DocumentTemplateAPI
 {
     public class Startup
     {
+        //Scaffold-DbContext "Server=tuleap.vanlanguni.edu.vn,18082;User Id=CP25Team08;Password=CP25Team08;Database=CP25Team08;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -33,9 +34,14 @@ namespace DocumentTemplateAPI
             services.AddScoped(typeof(IDBRepositoryBase<Department>), typeof(DBRepositoryBase<Department>));
             services.AddScoped(typeof(IDBRepositoryBase<Role>), typeof(DBRepositoryBase<Role>));
             services.AddScoped(typeof(IDBRepositoryBase<UserRole>), typeof(DBRepositoryBase<UserRole>));
+            services.AddScoped(typeof(IDBRepositoryBase<UserTemplate>), typeof(DBRepositoryBase<UserTemplate>));
+            services.AddScoped(typeof(IDBRepositoryBase<Category>), typeof(DBRepositoryBase<Category>));
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ITemplateRepository, TemplateRepository>();
             services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+            services.AddScoped<IUserRoleRepository, UserRoleRepository>();
+            services.AddScoped<IUserTemplateRepository, UserTemplateRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddControllers();
             services.AddSwaggerGen(s =>
             {

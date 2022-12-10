@@ -58,8 +58,8 @@ namespace DocumentTemplateRepository.Implementations
                 EDMXType newItem = CreationTypeToEdmx(item);
 
                 DateTime now = DateTime.Now;
-                SetPropValue<DateTime>(newItem, "createdAt", now);
-                SetPropValue<DateTime>(newItem, "updatedAt", now);
+                SetPropValue<DateTime>(newItem, "CreatedAt", now);
+                SetPropValue<DateTime>(newItem, "UpdateAt", now);
 
                 var result = (EDMXType)_repo.Insert(newItem);
                 _UnitOfWork.Commit();

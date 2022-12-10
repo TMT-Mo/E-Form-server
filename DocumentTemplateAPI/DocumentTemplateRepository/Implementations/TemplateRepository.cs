@@ -18,7 +18,18 @@ namespace DocumentTemplateRepository.Implementations
 
         protected override Template CreationTypeToEdmx(TemplateCreationRequest inp)
         {
-            throw new NotImplementedException();
+            return new Template
+            {
+                Status = 1,
+                Size = inp.Size,
+                TemplateName = inp.TemplateName,
+                Type = inp.Type,
+                Description = inp.Description,
+                Link = inp.Link,
+                IsEnable = true,
+                CreatedBy = inp.CreatedBy,
+                IdType = inp.IdTemplateType
+            };
         }
         protected override void UpdateEDMXFromUpdateReq(Template edmx, TemplateUpdateRequest inp)
         {

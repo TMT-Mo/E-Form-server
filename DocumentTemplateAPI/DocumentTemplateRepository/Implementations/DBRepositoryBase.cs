@@ -52,7 +52,7 @@ namespace DocumentTemplateRepository.Implementations
 
         public virtual object Insert(T entity)
         {
-            dynamic obj = dbSet.Add(entity);
+            dynamic obj = dbSet.Add(entity).Entity;
             return obj;
         }
 

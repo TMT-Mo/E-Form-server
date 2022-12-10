@@ -16,6 +16,11 @@ namespace DocumentTemplateModel.Models
 
         public int Id { get; set; }
         public string RoleName { get; set; }
+        public int? Status { get; set; }
+        public DateTime? CreatedAt { get; set; }
+        public DateTime? UpdateAt { get; set; }
+        public int? CreatedBy { get; set; }
+        public int? UpdateBy { get; set; }
 
         public virtual ICollection<UserRole> UserRole { get; set; }
     }

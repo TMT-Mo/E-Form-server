@@ -13,19 +13,24 @@ namespace DocumentTemplateModel.Models
         {
             Document = new HashSet<Document>();
             UserRole = new HashSet<UserRole>();
+            UserTemplate = new HashSet<UserTemplate>();
         }
 
         public int Id { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
         public string Email { get; set; }
-        public int? StatusAccount { get; set; }
-        public DateTime? CreatedAt { get; set; }
-        public DateTime? UpdatedAt { get; set; }
         public string Firstname { get; set; }
         public string Lastname { get; set; }
+        public string Signature { get; set; }
+        public int? Status { get; set; }
+        public DateTime? CreatedAt { get; set; }
+        public DateTime? UpdateAt { get; set; }
+        public int? CreatedBy { get; set; }
+        public int? UpdateBy { get; set; }
 
         public virtual ICollection<Document> Document { get; set; }
         public virtual ICollection<UserRole> UserRole { get; set; }
+        public virtual ICollection<UserTemplate> UserTemplate { get; set; }
     }
 }

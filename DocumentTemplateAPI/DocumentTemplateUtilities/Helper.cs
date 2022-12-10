@@ -61,5 +61,27 @@ namespace DocumentTemplateUtilities
                 Page = page
             };
         }
+        public static string GetErrorMessagesFromModalState(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary modelState)
+        {
+            var errorMessages = "";
+
+            foreach (var state in modelState.Values)
+            {
+                foreach (var error in state.Errors)
+                {
+                    if (!string.IsNullOrEmpty(error.ErrorMessage))
+                    {
+                        errorMessages += error.ErrorMessage + " ";
+                    }
+                    else if (!string.IsNullOrEmpty(error.Exception.Message))
+                    {
+                        errorMessages += error.Exception.Message + " ";
+                    }
+
+                }
+            }
+
+            return errorMessages;
+        }
     }
 }

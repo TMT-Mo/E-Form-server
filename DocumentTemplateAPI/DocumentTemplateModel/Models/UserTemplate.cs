@@ -7,21 +7,16 @@ using System.Collections.Generic;
 
 namespace DocumentTemplateModel.Models
 {
-    public partial class Department
+    public partial class UserTemplate
     {
-        public Department()
-        {
-            UserRole = new HashSet<UserRole>();
-        }
-
         public int Id { get; set; }
-        public string DepartmentName { get; set; }
+        public int? IdUser { get; set; }
+        public int? IdTemplate { get; set; }
         public int? Status { get; set; }
         public DateTime? CreatedAt { get; set; }
         public DateTime? UpdateAt { get; set; }
-        public int? CreatedBy { get; set; }
-        public int? UpdateBy { get; set; }
 
-        public virtual ICollection<UserRole> UserRole { get; set; }
+        public virtual Template IdTemplateNavigation { get; set; }
+        public virtual User IdUserNavigation { get; set; }
     }
 }
