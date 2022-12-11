@@ -75,7 +75,7 @@ namespace DocumentTemplateAPI.Controllers
         }
 
         [HttpGet]
-        [Route("getusers")]
+        [Route("getUsers")]
         public async Task<IActionResult> GetPagination()
         {
             var queries = HttpContext.Request;
@@ -91,7 +91,7 @@ namespace DocumentTemplateAPI.Controllers
                     query = query.Where(x => userIds.Contains(x.Id));
                 }
 
-                var paginationParams = ConvertEDMXToDetail.ParsePaginationParams(queries);
+                var paginationParams = Helper.ParsePaginationParams(queries);
                 var result = _userRepository.GetPagination(paginationParams.Page, paginationParams.Size, queries,null,query);
 
                 return Ok(new PaginationResult<UserProfileReponse>

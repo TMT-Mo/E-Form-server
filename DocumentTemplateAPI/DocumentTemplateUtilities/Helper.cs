@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace DocumentTemplateUtilities
 {
-    public static class ConvertEDMXToDetail
+    public static class Helper
     {
         //public static string CheckWhiteListedParams(List<String> whiteListedParams)
         //{
@@ -83,5 +83,45 @@ namespace DocumentTemplateUtilities
 
             return errorMessages;
         }
+        public static string ConvertStatusTemplate(int status)
+        {
+            if (status == 1)
+            {
+                return Enums.StatusTemplate.New.ToString();
+            }
+            if (status == 2)
+            {
+                return Enums.StatusTemplate.Approved.ToString();
+            }
+            return Enums.StatusTemplate.Rejected.ToString();
+
+
+        }
+
+        public static string ConvertIsEnableTemplate(bool isEnable)
+        {
+            if (isEnable)
+            {
+                return Enums.IsEnableTemplate.Enable.ToString();
+            }
+            return Enums.IsEnableTemplate.Disabled.ToString();
+        }
+
+        public static string ConvertStatusDocument(int status)
+        {
+            if (status == 1)
+            {
+                return Enums.StatusDocument.Processing.ToString();
+            }
+            if (status == 2)
+            {
+                return Enums.StatusDocument.Approved.ToString();
+            }
+            return Enums.StatusDocument.Rejected.ToString();
+        }
+
+
+
+
     }
 }

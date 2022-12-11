@@ -30,7 +30,7 @@ namespace DocumentTemplateModel.Entities.Templates
         public int Size { get; set; }
 
         [JsonProperty(PropertyName = "status")]
-        public int Status { get; set; }
+        public string Status { get; set; }
 
         [JsonProperty(PropertyName = "link")]
         public string Link { get; set; }
@@ -42,7 +42,10 @@ namespace DocumentTemplateModel.Entities.Templates
         public List<UserProfileReponse> SignatoryList { get; set; }
 
         [JsonProperty(PropertyName = "isEnable")]
-        public bool IsEnable { get; set; }
+        public string IsEnable { get; set; }
+
+        [JsonProperty(PropertyName = "departmentName")]
+        public string DepartmentName { get; set; }
 
     }
 }

@@ -25,14 +25,14 @@ namespace DocumentTemplateAPI.Controllers
         }
 
         [HttpGet]
-        [Route("getdepartments")]
+        [Route("getDepartments")]
         public async Task<IActionResult> GetPagination()
         {
             var queries = HttpContext.Request;
             try
             {
                 var departments = _departmentRepository.GetAll();
-                var paginationParams = ConvertEDMXToDetail.ParsePaginationParams(queries);
+                var paginationParams = Helper.ParsePaginationParams(queries);
                 var result = _departmentRepository.GetPagination(paginationParams.Page, paginationParams.Size, queries);
 
                 return Ok(new PaginationResult<DepartmentReponse>

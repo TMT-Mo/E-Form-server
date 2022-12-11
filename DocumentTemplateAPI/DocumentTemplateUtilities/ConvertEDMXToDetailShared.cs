@@ -12,29 +12,31 @@ namespace DocumentTemplateUtilities
 {
     public class ConvertEDMXToDetailShared
     {
-        public static TemplateReponse TemplateEdmxToDetail(Template inp, IEnumerable<Category> categories = null, IEnumerable<UserTemplate> userTemplates = null, IEnumerable<User> users = null)
+        public static TemplateReponse TemplateEdmxToDetail(Template inp, IEnumerable<Category> categories = null, IEnumerable<UserTemplate> userTemplates = null, IEnumerable<User> users = null, IEnumerable<Department> departments = null, IEnumerable<UserRole> userRoles = null)
         {
             var typeName = categories?.SingleOrDefault(x => x.Id == inp.IdType)?.TypesName;
             var userTemplateIds = userTemplates?.Where(x => x.IdTemplate == inp.Id).Select( y => y.IdUser).ToList();
             var usersbyTemplateIds = users?.Where(x => userTemplateIds.Contains(x.Id)).ToList();
+            var departmentByUserTemplateIds = userRoles?.Where(x => userTemplateIds.Contains(x.IdUser)).Select(y => y.IdDepartment).Distinct().ToList();
+            var departmentName = departments?.Where(x => departmentByUserTemplateIds.Any(y => y == x.Id)).FirstOrDefault()?.DepartmentName;
             return new TemplateReponse
             {
                 Id = inp.Id,
                 CreatedAt = inp.CreatedAt,
                 UpdateAt = inp.UpdateAt,
-                Status = (int)inp.Status,
+                Status = Helper.ConvertStatusTemplate((int)inp.Status),
                 Size = (int)inp.Size,
                 Type = inp.Type,
                 Link = inp.Link,
                 Description = inp.Description,
-                IsEnable = (bool)inp.IsEnable,
+                IsEnable = Helper.ConvertIsEnableTemplate((bool)inp.IsEnable),
                 TemplateName = inp.TemplateName,
                 TypeName = typeName,
-                SignatoryList = usersbyTemplateIds != null ? UserEdmxToListDetails(usersbyTemplateIds) : null
-
+                SignatoryList = usersbyTemplateIds != null ? UserEdmxToListDetails(usersbyTemplateIds) : null,
+                DepartmentName = departmentName
             };
         }
-        public static List<TemplateReponse> TemplateEdmxToListDetails(List<Template> inp, IEnumerable<Category> categories = null, IEnumerable<UserTemplate> userTemplates = null, IEnumerable<User> users = null)
+        public static List<TemplateReponse> TemplateEdmxToListDetails(List<Template> inp, IEnumerable<Category> categories = null, IEnumerable<UserTemplate> userTemplates = null, IEnumerable<User> users = null, IEnumerable<Department> departments = null, IEnumerable<UserRole> userRoles = null)
         {
             return inp.Select(e => TemplateEdmxToDetail(e, categories, userTemplates, users)).ToList();
         }
