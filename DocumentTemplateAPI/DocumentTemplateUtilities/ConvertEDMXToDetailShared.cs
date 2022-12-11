@@ -38,7 +38,7 @@ namespace DocumentTemplateUtilities
         }
         public static List<TemplateReponse> TemplateEdmxToListDetails(List<Template> inp, IEnumerable<Category> categories = null, IEnumerable<UserTemplate> userTemplates = null, IEnumerable<User> users = null, IEnumerable<Department> departments = null, IEnumerable<UserRole> userRoles = null)
         {
-            return inp.Select(e => TemplateEdmxToDetail(e, categories, userTemplates, users)).ToList();
+            return inp.Select(e => TemplateEdmxToDetail(e, categories, userTemplates, users, departments, userRoles)).ToList();
         }
 
         public static List<DepartmentReponse> DepartmentEdmxToListDetails(List<Department> inp)
