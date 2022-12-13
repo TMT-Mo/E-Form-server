@@ -780,3 +780,8 @@ eagle.epf
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/csharp,visualstudio,aspnetcore,visualstudiocode,dotnetcore,eagle
+*.pdb
+*.config
+*.dll
+*.pdb
+DocumentTemplateAPI/DocumentTemplateRepository/bin/Debug/netcoreapp3.1/DocumentTemplateRepository.runtimeconfig.dev.json
