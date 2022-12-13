@@ -39,6 +39,7 @@ namespace DocumentTemplateAPI.Controllers
         public async Task<IActionResult> GetPagination()
         {
             var queries = HttpContext.Request;
+
             try
             {
                 var users = _userRepository.GetAll(); 
