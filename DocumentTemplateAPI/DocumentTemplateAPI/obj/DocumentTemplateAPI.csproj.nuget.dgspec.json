@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateAPI\\DocumentTemplateAPI.csproj": {}
+    "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateAPI\\DocumentTemplateAPI.csproj": {}
   },
   "projects": {
-    "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateAPI\\DocumentTemplateAPI.csproj": {
+    "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateAPI\\DocumentTemplateAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateAPI\\DocumentTemplateAPI.csproj",
+        "projectUniqueName": "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateAPI\\DocumentTemplateAPI.csproj",
         "projectName": "DocumentTemplateAPI",
-        "projectPath": "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateAPI\\DocumentTemplateAPI.csproj",
-        "packagesPath": "C:\\Users\\hoang\\.nuget\\packages\\",
-        "outputPath": "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateAPI\\obj\\",
+        "projectPath": "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateAPI\\DocumentTemplateAPI.csproj",
+        "packagesPath": "C:\\Users\\trinh\\.nuget\\packages\\",
+        "outputPath": "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateAPI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\hoang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\trinh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,14 +28,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateModel\\DocumentTemplateModel.csproj": {
-                "projectPath": "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateModel\\DocumentTemplateModel.csproj"
+              "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateModel\\DocumentTemplateModel.csproj": {
+                "projectPath": "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateModel\\DocumentTemplateModel.csproj"
               },
-              "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateRepository\\DocumentTemplateRepository.csproj": {
-                "projectPath": "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateRepository\\DocumentTemplateRepository.csproj"
+              "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateRepository\\DocumentTemplateRepository.csproj": {
+                "projectPath": "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateRepository\\DocumentTemplateRepository.csproj"
               },
-              "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateUtilities\\DocumentTemplateUtilities.csproj": {
-                "projectPath": "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateUtilities\\DocumentTemplateUtilities.csproj"
+              "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateUtilities\\DocumentTemplateUtilities.csproj": {
+                "projectPath": "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateUtilities\\DocumentTemplateUtilities.csproj"
               }
             }
           }
@@ -62,6 +59,10 @@
               "version": "[3.1.30, )"
             },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.30, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
               "version": "[3.1.30, )"
             },
@@ -97,16 +98,11 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.12, 3.1.12]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -115,24 +111,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.3.21202.5\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateModel\\DocumentTemplateModel.csproj": {
+    "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateModel\\DocumentTemplateModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateModel\\DocumentTemplateModel.csproj",
+        "projectUniqueName": "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateModel\\DocumentTemplateModel.csproj",
         "projectName": "DocumentTemplateModel",
-        "projectPath": "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateModel\\DocumentTemplateModel.csproj",
-        "packagesPath": "C:\\Users\\hoang\\.nuget\\packages\\",
-        "outputPath": "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateModel\\obj\\",
+        "projectPath": "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateModel\\DocumentTemplateModel.csproj",
+        "packagesPath": "C:\\Users\\trinh\\.nuget\\packages\\",
+        "outputPath": "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateModel\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\hoang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\trinh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -162,6 +155,10 @@
               "target": "Package",
               "version": "[3.1.30, )"
             },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.1.30, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.30, )"
@@ -171,6 +168,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.30, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[4.7.2, )"
             }
           },
           "imports": [
@@ -179,7 +180,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -188,24 +190,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.3.21202.5\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateRepository\\DocumentTemplateRepository.csproj": {
+    "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateRepository\\DocumentTemplateRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateRepository\\DocumentTemplateRepository.csproj",
+        "projectUniqueName": "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateRepository\\DocumentTemplateRepository.csproj",
         "projectName": "DocumentTemplateRepository",
-        "projectPath": "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateRepository\\DocumentTemplateRepository.csproj",
-        "packagesPath": "C:\\Users\\hoang\\.nuget\\packages\\",
-        "outputPath": "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateRepository\\obj\\",
+        "projectPath": "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateRepository\\DocumentTemplateRepository.csproj",
+        "packagesPath": "C:\\Users\\trinh\\.nuget\\packages\\",
+        "outputPath": "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateRepository\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\hoang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\trinh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -219,11 +218,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateModel\\DocumentTemplateModel.csproj": {
-                "projectPath": "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateModel\\DocumentTemplateModel.csproj"
+              "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateModel\\DocumentTemplateModel.csproj": {
+                "projectPath": "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateModel\\DocumentTemplateModel.csproj"
               },
-              "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateUtilities\\DocumentTemplateUtilities.csproj": {
-                "projectPath": "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateUtilities\\DocumentTemplateUtilities.csproj"
+              "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateUtilities\\DocumentTemplateUtilities.csproj": {
+                "projectPath": "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateUtilities\\DocumentTemplateUtilities.csproj"
               }
             }
           }
@@ -249,7 +248,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -258,24 +258,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.3.21202.5\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateUtilities\\DocumentTemplateUtilities.csproj": {
+    "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateUtilities\\DocumentTemplateUtilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateUtilities\\DocumentTemplateUtilities.csproj",
+        "projectUniqueName": "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateUtilities\\DocumentTemplateUtilities.csproj",
         "projectName": "DocumentTemplateUtilities",
-        "projectPath": "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateUtilities\\DocumentTemplateUtilities.csproj",
-        "packagesPath": "C:\\Users\\hoang\\.nuget\\packages\\",
-        "outputPath": "E:\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateUtilities\\obj\\",
+        "projectPath": "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateUtilities\\DocumentTemplateUtilities.csproj",
+        "packagesPath": "C:\\Users\\trinh\\.nuget\\packages\\",
+        "outputPath": "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateUtilities\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\hoang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\trinh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -288,7 +285,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateModel\\DocumentTemplateModel.csproj": {
+                "projectPath": "D:\\workSpace\\homeWork\\E-Form-server\\DocumentTemplateAPI\\DocumentTemplateModel\\DocumentTemplateModel.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -305,6 +306,10 @@
               "target": "Package",
               "version": "[2.2.0, )"
             },
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.25.0, )"
@@ -316,7 +321,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -325,7 +331,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.3.21202.5\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

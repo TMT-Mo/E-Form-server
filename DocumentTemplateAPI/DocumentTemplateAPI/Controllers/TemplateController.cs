@@ -144,32 +144,5 @@ namespace DocumentTemplateAPI.Controllers
                 });
             }
         }
-
-
-        [HttpPut]
-        [Route ("updateTemplateStatus")]
-        public IActionResult UpdateTemplate([FromBody] TemplateUpdate request)
-        {
-
-            var updateTemplate= _templateRepository.GetOneById(request.Id); 
-
-
-            if (updateTemplate != null)
-            {
-                updateTemplate.Status= request.Status;
-                _templateRepository.UpdateOne(updateTemplate);
-                return Ok(updateTemplate);
-            }
-          
-
-            else return StatusCode(500, new Response
-            {
-                ErrorMessage = "Can not found template"
-            });
-
-
-        }
-
-
     }
 }
