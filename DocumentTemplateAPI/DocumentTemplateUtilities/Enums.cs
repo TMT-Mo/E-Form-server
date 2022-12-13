@@ -8,6 +8,7 @@ namespace DocumentTemplateUtilities
     {
         public enum Status
         {
+
             ACTIVE = 1,
             DISABLE = 2
         }
