@@ -785,3 +785,4 @@ eagle.epf
 *.dll
 *.pdb
 DocumentTemplateAPI/DocumentTemplateRepository/bin/Debug/netcoreapp3.1/DocumentTemplateRepository.runtimeconfig.dev.json
+*.v2
