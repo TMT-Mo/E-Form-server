@@ -809,3 +809,6 @@ DocumentTemplateAPI/DocumentTemplateUtilities/obj/DocumentTemplateUtilities.cspr
 DocumentTemplateAPI/DocumentTemplateUtilities/obj/DocumentTemplateUtilities.csproj.nuget.g.targets
 DocumentTemplateAPI/DocumentTemplateUtilities/obj/project.assets.json
 DocumentTemplateAPI/DocumentTemplateUtilities/obj/project.nuget.cache
+DocumentTemplateAPI/DocumentTemplateAPI/obj/Debug/netcoreapp3.1/DocumentTemplateAPI.csproj.AssemblyReference.cache
+DocumentTemplateAPI/DocumentTemplateRepository/obj/Debug/netcoreapp3.1/DocumentTemplateRepository.csproj.AssemblyReference.cache
+DocumentTemplateAPI/DocumentTemplateUtilities/obj/Debug/netcoreapp3.1/DocumentTemplateUtilities.csproj.AssemblyReference.cache
