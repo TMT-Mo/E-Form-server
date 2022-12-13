@@ -780,3 +780,32 @@ eagle.epf
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/csharp,visualstudio,aspnetcore,visualstudiocode,dotnetcore,eagle
+*.editorconfig
+DocumentTemplateAPI/DocumentTemplateAPI/obj/DocumentTemplateAPI.csproj.nuget.dgspec.json
+DocumentTemplateAPI/DocumentTemplateAPI/obj/Debug/netcoreapp3.1/DocumentTemplateAPI.GeneratedMSBuildEditorConfig.editorconfig
+DocumentTemplateAPI/DocumentTemplateAPI/obj/Debug/netcoreapp3.1/DocumentTemplateAPI.csproj.AssemblyReference.cache
+DocumentTemplateAPI/DocumentTemplateAPI/obj/Debug/netcoreapp3.1/DocumentTemplateAPI.assets.cache
+DocumentTemplateAPI/DocumentTemplateAPI/obj/Debug/netcoreapp3.1/DocumentTemplateAPI.assets.cache
+DocumentTemplateAPI/DocumentTemplateAPI/obj/Debug/netcoreapp3.1/apphost.exe
+DocumentTemplateAPI/DocumentTemplateAPI/obj/project.assets.json
+DocumentTemplateAPI/DocumentTemplateAPI/obj/project.nuget.cache
+DocumentTemplateAPI/DocumentTemplateModel/obj/Debug/netcoreapp3.1/DocumentTemplateModel.assets.cache
+DocumentTemplateAPI/DocumentTemplateModel/obj/Debug/netcoreapp3.1/DocumentTemplateModel.csproj.AssemblyReference.cache
+DocumentTemplateAPI/DocumentTemplateModel/obj/Debug/netcoreapp3.1/DocumentTemplateModel.GeneratedMSBuildEditorConfig.editorconfig
+DocumentTemplateAPI/DocumentTemplateModel/obj/project.assets.json
+DocumentTemplateAPI/DocumentTemplateModel/obj/project.assets.json
+DocumentTemplateAPI/DocumentTemplateModel/obj/project.nuget.cache
+DocumentTemplateAPI/DocumentTemplateRepository/obj/Debug/netcoreapp3.1/DocumentTemplateRepository.assets.cache
+DocumentTemplateAPI/DocumentTemplateRepository/obj/Debug/netcoreapp3.1/DocumentTemplateRepository.csproj.AssemblyReference.cache
+DocumentTemplateAPI/DocumentTemplateRepository/obj/Debug/netcoreapp3.1/DocumentTemplateRepository.GeneratedMSBuildEditorConfig.editorconfig
+DocumentTemplateAPI/DocumentTemplateRepository/obj/DocumentTemplateRepository.csproj.nuget.dgspec.json
+DocumentTemplateAPI/DocumentTemplateRepository/obj/DocumentTemplateRepository.csproj.nuget.g.props
+DocumentTemplateAPI/DocumentTemplateRepository/obj/DocumentTemplateRepository.csproj.nuget.g.targets
+DocumentTemplateAPI/DocumentTemplateRepository/obj/project.assets.json
+DocumentTemplateAPI/DocumentTemplateRepository/obj/project.nuget.cache
+*.cache
+DocumentTemplateAPI/DocumentTemplateUtilities/obj/DocumentTemplateUtilities.csproj.nuget.dgspec.json
+DocumentTemplateAPI/DocumentTemplateUtilities/obj/DocumentTemplateUtilities.csproj.nuget.g.props
+DocumentTemplateAPI/DocumentTemplateUtilities/obj/DocumentTemplateUtilities.csproj.nuget.g.targets
+DocumentTemplateAPI/DocumentTemplateUtilities/obj/project.assets.json
+DocumentTemplateAPI/DocumentTemplateUtilities/obj/project.nuget.cache
